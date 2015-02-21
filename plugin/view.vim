@@ -9,12 +9,13 @@ set guioptions=r
 syntax on
 set number
 set cursorline
+set showcmd
 au BufRead,BufNewFile *.axlsx setfiletype ruby
 au BufRead,BufNewFile Gemfile setfiletype ruby
 au BufRead,BufNewFile Rakefile setfiletype ruby
 au BufRead,BufNewFile *.ru setfiletype ruby
 
-" indent remap
+" indentation
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -24,10 +25,13 @@ set autoindent
 " set scroll
 set noshowmode
 set scrolloff=3
-
-" search function
+233
+" search & replace function
 set incsearch
 set hlsearch
 set autoread
 set smartcase
+set ignorecase
 set gdefault
+
+

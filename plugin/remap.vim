@@ -1,5 +1,10 @@
 " remap switch mode
-inoremap ;; <Esc>
+inoremap ; <Esc>
+nnoremap ; i
+
+" remap original switch key
+inoremap ;<Space> ;<Space>
+inoremap ;<CR> ;<CR>
 
 " disable default movement
 inoremap <Left> <Nop>
@@ -12,18 +17,22 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 
 " remap basic & quick movement
-map = <c-u>
-map - <c-d>
+noremap = <c-u>
+noremap - <c-d>
 
 " switch window
-nmap gn <c-w><c-w>
-nmap <c-l> <c-w>5<
-nmap <c-h> <c-w>5>
-nmap <c-j> <c-w>5-
-nmap <c-k> <c-w>5+
+nnoremap gn <c-w><c-w>
+nnoremap <c-l> <c-w>5<
+nnoremap <c-h> <c-w>5>
+nnoremap <c-j> <c-w>5-
+nnoremap <c-k> <c-w>5+
+
+nnoremap <CR> o<Esc>
 
 " save & quit
-noremap ss <esc>:w<CR>
-nmap WQ :wq<CR>
-nmap QQ :q<CR>
+nnoremap <S-S> <esc>:w<CR>
+nnoremap WQ :wq<CR>
+nnoremap QQ :q<CR>
 
+" css syntax
+autocmd Filetype css inoremap <buffer> {<CR> {<CR>}<Esc>O
