@@ -15,5 +15,7 @@ filetype plugin on
 set encoding=utf-8
 scriptencoding utf-8
 
+" auto source .vimrc when save
 autocmd! BufWritePost $MYVIMRC source $MYVIMRC
+" auto backup .vimrc into git repo
 autocmd! BufWrite $MYVIMRC :write! ~/.vim/.vimrc
