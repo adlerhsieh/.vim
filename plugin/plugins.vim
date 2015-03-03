@@ -12,10 +12,10 @@ set laststatus=2
 	" remap default <Leader>
 	map <Leader> <Plug>(easymotion-prefix)
 	" enable quick jump inline
-	map <Leader>l <Plug>(easymotion-lineforward)
-	map <Leader>j <Plug>(easymotion-j)
-	map <Leader>k <Plug>(easymotion-k)
-	map <Leader>h <Plug>(easymotion-linebackward)
+	" map <Leader>l <Plug>(easymotion-lineforward)
+	" map <Leader>j <Plug>(easymotion-j)
+	" map <Leader>k <Plug>(easymotion-k)
+	" map <Leader>h <Plug>(easymotion-linebackward)
   nmap s <Plug>(easymotion-s)
   map  / <Plug>(easymotion-sn)
   map  n <Plug>(easymotion-next)
