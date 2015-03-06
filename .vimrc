@@ -14,10 +14,21 @@ scriptencoding utf-8
 autocmd! BufWritePost $MYVIMRC source $MYVIMRC
 " auto backup .vimrc into git repo
 autocmd! BufWrite $MYVIMRC :write! ~/.vim/.vimrc
+" a testing function
 function! Check()
   if getline(".")[col(".")-1] == "["
     :execute "normal! l" 
   endif
+endfunction
+
+" backup plugin list
+autocmd! BufWrite $MYVIMRC :execute "call Plugins_backup()"
+function! Plugins_backup()
+  :execute "!rm ~/.vim/plugin_list.txt" 
+  :execute "e ~/.vim/plugin_list.txt" 
+  :execute "read !ls ~/.vim/bundle"
+  :execute "normal! ggdd"
+  :execute "wq"
 endfunction
 
 " ========================
@@ -158,6 +169,4 @@ set autoread
 set smartcase
 set ignorecase
 set gdefault
-
-
 
