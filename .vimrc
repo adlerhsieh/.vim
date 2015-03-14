@@ -10,6 +10,8 @@ filetype indent on
 filetype plugin on
 set encoding=utf-8
 scriptencoding utf-8
+" set matchit
+runtime macros/matchit.vim
 " auto source .vimrc when save
 autocmd! BufWritePost $MYVIMRC source $MYVIMRC
 " auto backup .vimrc into git repo
@@ -25,9 +27,8 @@ endfunction
 autocmd! BufWrite $MYVIMRC :execute "call Plugins_backup()"
 function! Plugins_backup()
   :execute "!rm ~/.vim/plugin_list.txt" 
-  :execute "e ~/.vim/plugin_list.txt" 
+  :execute "tabnew ~/.vim/plugin_list.txt" 
   :execute "read !ls ~/.vim/bundle"
-  :execute "normal! ggdd"
   :execute "wq"
 endfunction
 
