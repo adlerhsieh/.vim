@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/hsiehadler/.vim/bundle/vim-snippets/snippets'
-let g:netrw_dirhist_2='/Users/hsiehadler/.vim/plugin'
-let g:netrw_dirhist_3='/Users/hsiehadler/.vim/bundle/vim-snippets/snippets'
-let g:netrw_dirhist_4='/Users/hsiehadler/.vim/plugin'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/hsiehadler/prebuy/config'
+let g:netrw_dirhist_2='/Users/hsiehadler'
+let g:netrw_dirhist_3='/Users/hsiehadler/prebuy'
+let g:netrw_dirhist_4='/Users/hsiehadler/prebuy/app'
+let g:netrw_dirhist_5='/Users/hsiehadler/prebuy/app/controllers'
+let g:netrw_dirhist_6='/Users/hsiehadler/prebuy'

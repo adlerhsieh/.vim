@@ -1,12 +1,13 @@
 
+MatchTagAlways
 ag.vim
+auto-pairs
 colorschemes
 ctrlp-py-matcher
 ctrlp.vim
 easymotion.vim
 emmet-vim
 lightline.vim
-nerdtree
 ruby-matchit
 supertab
 tabular
@@ -14,10 +15,10 @@ tcomment.vim
 tlib_vim
 vim-addon-mw-utils
 vim-bundler
+vim-coffee-script
 vim-endwise
 vim-fugitive
 vim-multiple-cursors
-vim-nerdtree-tabs
 vim-rails
 vim-rspec
 vim-ruby
