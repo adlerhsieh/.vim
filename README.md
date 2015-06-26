@@ -9,7 +9,7 @@ This is the vim plugins and .vimrc by Adler Hsieh for reference and backup
 
 ## Installation
 
-### 1. Remove existing files
+#### 1. Remove existing files
 
 Remove your `.vim` and `.vimrc` first. Backup them up if you want to keep a copy.
 
@@ -18,13 +18,13 @@ rm -rf ~/.vim
 rm ~/.vimrc
 ```
 
-### 2. Clone the repo
+#### 2. Clone the repo
 
 ```
 git clone git@github.com:nkj20932/.vim.git ~/.vim
 ```
 
-### 3. Clone plugins
+#### 3. Clone plugins
 
 Init submodules and clone.
 
@@ -34,13 +34,13 @@ git submodule init
 git submodule update --recursive
 ```
 
-### 4. Copy .vimrc
+#### 4. Copy .vimrc
 
 ```
 cp ~/.vim/misc/.vimrc ~/.vimrc
 ```
 
-### 5. Copy custom theme
+#### 5. Copy custom theme
 
 Try my custom Monokai them if you like by copying and overwriting existing theme file.
 
