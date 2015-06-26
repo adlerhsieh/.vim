@@ -37,8 +37,8 @@ endfunction
 " ========================
 
 " syncing NERDTree and Ctrl-P directory
-let g:NERDTreeChDirMode = 2
-let g:ctrlp_working_path_mode = 'rw'
+" let g:NERDTreeChDirMode = 2
+" let g:ctrlp_working_path_mode = 'rw'
 " Lightline
 let g:lightline = {
                   \ 'colorscheme': 'wombat',
@@ -55,15 +55,23 @@ nmap s <Plug>(easymotion-s2)
 let g:EasyMotion_startofline = 0
 let g:EasyMotion_smartcase = 1
 " vim-sneak
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-xmap f <Plug>Sneak_s
-xmap F <Plug>Sneak_S
-omap f <Plug>Sneak_s
-omap F <Plug>Sneak_S
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
 " NERDTree activation
-nmap mn :NERDTreeFocusToggle<CR>
-nmap <Leader>n :NERDTreeTabsToggle<CR>
+" nmap mn :NERDTreeFocusToggle<CR>
+" nmap <Leader>n :NERDTreeTabsToggle<CR>
+nnoremap <Leader>nn :edit .<CR>
+nnoremap <Leader>nN :Explore<CR>
+nnoremap <Leader>nx :split .<CR>
+nnoremap <Leader>nX :Sexplore<CR>
+nnoremap <Leader>nv :vsplit .<CR>
+nnoremap <Leader>nV :Vexplore<CR>
+nnoremap <Leader>nt :tabnew<CR>:e.<CR>
+nnoremap <Leader>nT :tabnew<CR>:Explore<CR>
 " CtrlP activation
 let g:ctrlp_map = '<Leader>.'
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
@@ -75,15 +83,28 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
 " multiple cursors
 let g:multi_cursor_quit_key=';'
-
+nnoremap <Leader>t :Tabularize /
+vnoremap <Leader>t :Tabularize /
+noremap <Leader>ra :call RunAllSpecs()<CR>
+noremap <Leader>rr :call RunCurrentSpecFile()<CR>
+noremap <Leader>re :reg<CR>
+" highlight html matching tags
+let g:mta_use_matchparen_group = 1
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'php': 1,
+    \ 'erb': 1,
+    \}
 " ========================
 "       Key Remapping
 " ========================
 
 " remap switch mode
 inoremap ; <Esc>
-inoremap ;; ;<Esc> 
-" nnoremap ; i
+inoremap ;; ;<Esc>
 " remap original switch key
 inoremap ;<Space> ;<Space>
 inoremap ;<CR> ;<CR>
@@ -105,13 +126,9 @@ nnoremap <c-l> <c-w>5<
 nnoremap <c-h> <c-w>5>
 nnoremap <c-j> <c-w>5-
 nnoremap <c-k> <c-w>5+
-" extra surround
-inoremap "<Tab> ""<Left>
-inoremap '<Tab> ''<Left>
-inoremap (<Tab> ()<Left>
-inoremap {<Tab> {}<Left>
-inoremap [<Tab> []<Left>
-inoremap <<Tab> <><Left>
+" add comma at end
+nnoremap <Leader>/ A,<Esc>
+nnoremap <Leader>; A;<Esc>
 " insert new line with two more lines
 nnoremap <Leader>a o<Esc>0Di<Enter><Enter><Up>
 " delete line but stay in normal mode
@@ -121,13 +138,17 @@ inoremap <c-l> <Right>
 " save & quit
 nnoremap <s-s> <esc>:w<CR>
 nnoremap WQ :wq<CR>
-nnoremap QQ :q<CR> 
+nnoremap Q :q<CR> 
 " cancel search highlight
 nnoremap <Leader><Space> :noh<CR>
+" RSpec add focus tag
+nnoremap <Leader>rf A<BS><BS><BS>, focus: true do<Esc>
+nnoremap <Leader>rd $15Xxa do<Esc>
 " adjust file indentation
 nnoremap <Leader>i gg=G
-" add blank line
+" add blank line and space
 nnoremap <Enter> O<Esc>0D
+nnoremap <Space> i<Space><Esc>
 " remap redo
 nnoremap rr <c-r>
 " css syntax
@@ -135,12 +156,16 @@ autocmd Filetype css,scss inoremap <buffer> {<CR> {<CR>}<Esc>O
 autocmd Filetype css,scss nnoremap <buffer> <Leader>c 0f;cT: 
 " js syntax
 autocmd Filetype javascript inoremap <buffer> {<CR> {<CR>};<Esc>O
-
+" txt long text editing
+autocmd Filetype txt nnoremap <buffer> j gj
+autocmd Filetype txt nnoremap <buffer> k gk
+" autocmd Filetype netrw nnoremap <buffer> o <CR>
+autocmd Filetype netrw nnoremap <buffer> - <c-d>
 " ========================
 "           View
 " ========================
 
-" theme comes with Pathogen. Load this line after bundle is executed. 
+" theme comes with Pathogen. Load this line after bundle is executed.
 colorscheme monokai 
 " font options
 set guifont=Anonymous\ Pro:h16
@@ -151,9 +176,14 @@ set number
 set cursorline
 set showcmd
 au BufRead,BufNewFile *.axlsx setfiletype ruby
+au BufRead,BufNewFile *.prawn setfiletype ruby
+au BufRead,BufNewFile *.jbuilder setfiletype ruby
 au BufRead,BufNewFile Gemfile setfiletype ruby
 au BufRead,BufNewFile Rakefile setfiletype ruby
 au BufRead,BufNewFile *.ru setfiletype ruby
+au BufRead,BufNewFile *.json setfiletype javascript
+au BufNewFile * write
+" au BufWritePost * call 
 " indentation
 set tabstop=2
 set shiftwidth=2
@@ -170,4 +200,3 @@ set autoread
 set smartcase
 set ignorecase
 set gdefault
-
