@@ -1,6 +1,6 @@
 # My .vim Backup
 
-This is the vim plugins and .vimrc by Adler Hsieh for reference and backup
+This is the vim plugins and .vimrc for reference and backup.
 
 ## Requirement
 
@@ -9,13 +9,15 @@ This is the vim plugins and .vimrc by Adler Hsieh for reference and backup
 
 ## Auto Installation
 
-Run the following command in your terminal. (IMPORTANT: This command will overwrite your current `.vim` and `.vimrc`. Back them up first if you don't want this happen.)
+Run the following command in your terminal. This script includes all following commands.
+
+(IMPORTANT: This command will overwrite your current `.vim` and `.vimrc`. Back them up first if you don't want this happen.)
 
 ```
 curl https://raw.githubusercontent.com/nkj20932/.vim/master/misc/installer | bash
 ```
 
-And it's all done
+And it's all done.
 
 ## Manual Installation
 
