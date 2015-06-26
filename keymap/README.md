@@ -1,4 +1,4 @@
-``` bash
+``` viml
 " Load Pathogen
 execute pathogen#infect()
 " remap command mode & leader key
