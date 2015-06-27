@@ -1,93 +1,93 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
+	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/MatchTagAlways"]
 	path = bundle/MatchTagAlways
-	url = git@github.com:Valloric/MatchTagAlways.git
+	url = https://github.com/Valloric/MatchTagAlways.git
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
-	url = git@github.com:rking/ag.vim.git
+	url = https://github.com/rking/ag.vim.git
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
+	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
+	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "bundle/ctrlp-py-matcher"]
 	path = bundle/ctrlp-py-matcher
-	url = git@github.com:FelikZ/ctrlp-py-matcher.git
+	url = https://github.com/FelikZ/ctrlp-py-matcher.git
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
-	url = git@github.com:easymotion/vim-easymotion.git
+	url = https://github.com/easymotion/vim-easymotion.git
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
-	url = git@github.com:mattn/emmet-vim.git
+	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/lightline.vim"]
 	path = bundle/lightline.vim
-	url = git@github.com:itchyny/lightline.vim.git
+	url = https://github.com/itchyny/lightline.vim.git
 [submodule "bundle/ruby-matchit"]
 	path = bundle/ruby-matchit
-	url = git@github.com:vim-scripts/ruby-matchit.git
+	url = https://github.com/vim-scripts/ruby-matchit.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
-	url = git@github.com:godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "bundle/tcomment.vim"]
 	path = bundle/tcomment.vim
-	url = git@github.com:tomtom/tcomment_vim.git
+	url = https://github.com/tomtom/tcomment_vim.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
-	url = git@github.com:tomtom/tlib_vim.git
+	url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
-	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
-	url = git@github.com:tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
+	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
-	url = git@github.com:tpope/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
-	url = git@github.com:tpope/vim-rails.git
+	url = https://github.com/tpope/vim-rails.git
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
-	url = git@github.com:thoughtbot/vim-rspec.git
+	url = https://github.com/thoughtbot/vim-rspec.git
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
-	url = git@github.com:vim-ruby/vim-ruby.git
+	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/vim-rvm"]
 	path = bundle/vim-rvm
-	url = git@github.com:tpope/vim-rvm.git
+	url = https://github.com/tpope/vim-rvm.git
 [submodule "bundle/vim-sneak"]
 	path = bundle/vim-sneak
-	url = git@github.com:justinmk/vim-sneak.git
+	url = https://github.com/justinmk/vim-sneak.git
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
-	url = git@github.com:garbas/vim-snipmate.git
+	url = https://github.com/garbas/vim-snipmate.git
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
-	url = git@github.com:honza/vim-snippets.git
+	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-textobj-rubyblock"]
 	path = bundle/vim-textobj-rubyblock
-	url = git@github.com:nelstrom/vim-textobj-rubyblock.git
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
-	url = git@github.com:kana/vim-textobj-user.git
+	url = https://github.com/kana/vim-textobj-user.git
