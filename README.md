@@ -40,7 +40,7 @@ git submodule update --recursive
 cp ~/.vim/misc/.vimrc ~/.vimrc
 ```
 
-#### 5. Copy custom theme
+#### 5. Copy custom theme (Optional)
 
 Try my custom Monokai them if you like by copying and overwriting existing theme file.
 
