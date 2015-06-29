@@ -2,6 +2,8 @@
 
 This is the vim plugins and .vimrc for reference and backup.
 
+## [Documents 設定檔內容說明](https://github.com/nkj20932/.vim/blob/master/document/welcome.md)
+
 ## Requirement 需求
 
 1. Unix system with [Vim](http://www.vim.org/) editor installed.
