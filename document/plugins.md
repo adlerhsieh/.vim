@@ -4,9 +4,10 @@
 
 以下針對各個功能我所安裝的外掛進行說明：
 
-## 檔案瀏覽
+## 檔案瀏覽 Explorer
 
 說到檔案瀏覽，Vim使用者大多第一個想到的都是`NERDTree`，但我並沒有使用`NERDTree`，因為怎麼用都不習慣，最主要有兩點：
+
 1. 會自動在專案內產生config檔很煩
 2. 儘管他想要弄成很像Text Mate或Sublime Text那樣側邊欄的效果，但說到底他還是個視窗。
 
@@ -27,7 +28,25 @@ nnoremap <Leader>nT :tabnew<CR>:Explore<CR>  " 在當前目錄、開新分頁呼
 
 可以看出基本上就是把所有指令濃縮成兩個部分：`<Leader>n`、`分割視窗鍵`，並且拆成從根目錄呼叫，或是從當前目錄呼叫。
 
+## [MatchTagAlways](https://github.com/Valloric/MatchTagAlways)
 
+可以在撰寫HTML時讓游標自動highlight兩邊的tag，官方的repo當中有非常漂亮的展示畫面。
 
+![](https://camo.githubusercontent.com/8caa688402b3f92c3646a3393bfe14bda44f7aaf/687474703a2f2f692e696d6775722e636f6d2f714166304e2e676966)
 
+## [Ag.vim](https://github.com/rking/ag.vim)
+
+檔案搜尋利器。要先安裝The Silver Searcher才可使用。安裝方式：
+
+```bash
+git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.sh && sudo make install
+```
+
+##### 熱鍵
+
+進入Command模式下即可使用，記得開頭大寫。
+
+```viml
+:Ag <你要搜尋的字詞> 
+```
 
