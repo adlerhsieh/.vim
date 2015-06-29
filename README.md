@@ -1,4 +1,4 @@
-# My .vim Backup
+# My .vim Backup 我的Vim設定檔
 
 This is the vim plugins and .vimrc for reference and backup.
 
