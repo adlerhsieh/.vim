@@ -16,13 +16,6 @@ runtime macros/matchit.vim
 autocmd! BufWritePost $MYVIMRC source $MYVIMRC
 " auto backup .vimrc into git repo
 autocmd! BufWrite $MYVIMRC :write! ~/.vim/.vimrc
-" a testing function
-function! Check()
-  if getline(".")[col(".")-1] == "["
-    :execute "normal! l" 
-  endif
-endfunction
-
 " backup plugin list
 autocmd! BufWrite $MYVIMRC :execute "call Plugins_backup()"
 function! Plugins_backup()
@@ -44,9 +37,6 @@ let g:lightline = {
                   \ 'colorscheme': 'wombat',
                   \ }
 set laststatus=2
-" Easymotion
-" remap default <Leader>
-" map <Leader> <Plug>(easymotion-prefix)
 " nmap s <Plug>(easymotion-s)
 map  / <Plug>(easymotion-sn)
 map  n <Plug>(easymotion-next)
