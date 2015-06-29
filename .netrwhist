@@ -1,9 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/hsiehadler/.vim/misc'
-let g:netrw_dirhist_2='/Users/hsiehadler/.vim'
-let g:netrw_dirhist_3='/Users/hsiehadler/.vim/misc'
-let g:netrw_dirhist_4='/Users/hsiehadler/.vim'
-let g:netrw_dirhist_5='/Users/hsiehadler/.vim/documentation'
-let g:netrw_dirhist_6='/Users/hsiehadler/.vim'
-let g:netrw_dirhist_7='/Users/hsiehadler/.vim/document'
+let g:netrw_dirhist_cnt =0
