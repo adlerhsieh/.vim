@@ -4,5 +4,5 @@
 
 1. [外掛(plugins)](https://github.com/nkj20932/.vim/blob/master/document/plugins.md)
 2. [各語言外掛(lang plugins)](https://github.com/nkj20932/.vim/blob/master/document/lang_plugins.md)
-3. 熱鍵(keymap)
-4. 佈景主題 & 其他
+3. [熱鍵(keymap)](https://github.com/nkj20932/.vim/blob/master/document/keymap.md)
+4. [佈景主題 & 其他](https://github.com/nkj20932/.vim/blob/master/document/view.md)
