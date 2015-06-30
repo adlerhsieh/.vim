@@ -1,4 +1,4 @@
-# 1. 外掛
+# 1. 外掛 (綜合)
 
 我的外掛管理套件是使用[Pathogen](https://github.com/tpope/vim-pathogen)，在`.vimrc`的第一行就可以看到。以下只要有提到`<Leader>`的地方，都是我的`,`鍵。
 
