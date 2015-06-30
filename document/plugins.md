@@ -50,7 +50,7 @@ let g:mta_filetypes = {
     \}
 ```
 
-## 檔案內文搜尋 [Ag.vim](https://github.com/rking/ag.vim)
+## 跨檔案內文搜尋 [Ag.vim](https://github.com/rking/ag.vim)
 
 檔案搜尋利器。要先安裝The Silver Searcher才可使用。安裝方式：
 
@@ -191,3 +191,36 @@ vnoremap <Leader>t :Tabularize /
 3. Normal Mode 多行註解：`gc <count> <motion>`即可多行註解，例如`gc10j`就是向下註解10行。
 
 其他用法可以參照官方repo。
+
+## 佈景主題 [colorschemes](https://github.com/flazz/vim-colorschemes)
+
+Vim內建只有一個佈景主題，如果要改就是要手動改，這個外掛提供非常多的佈景主題，包括很多經典的。
+
+##### 設定
+
+```viml
+colorscheme monokai
+```
+
+可以將`monokai`換成其他的佈景主題，在repo當中[有非常多選擇](https://github.com/flazz/vim-colorschemes/tree/master/colors)。
+
+## 快速內文搜尋 [Easy Motion](https://github.com/easymotion/vim-easymotion)
+
+強大的外掛，官方repo就已經用了非常精簡扼要的使用流程圖：
+
+![](https://camo.githubusercontent.com/d5f800b9602faaeccc2738c302776a8a11797a0e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f333739373036322f323033393335392f61386539333864362d383939662d313165332d383738392d3630303235656138333635362e676966)
+
+基本上就是比較漂亮的搜尋介面，並且利用1或2個字母搜尋，直接跳過去。
+
+##### 熱鍵 & 設定
+
+```viml
+" 取代預設的搜尋介面
+map  / <Plug>(easymotion-sn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+" 使用兩個字母搜尋， 如果你喜歡用一個字母搜尋，可將本行結尾改成(easymotion-s)
+nmap s <Plug>(easymotion-s2)
+```
+
+使用的話，先按`s`，再按下你要搜尋的兩個字母，接著會有搜尋結果跳出，再按下相對應的字母，就會將游標移動過去。
