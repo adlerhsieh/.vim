@@ -44,7 +44,7 @@ cp ~/.vim/misc/.vimrc ~/.vimrc
 
 #### 5. Copy custom theme (Optional) 使用我的佈景主題
 
-Try my custom Monokai them if you like by copying and overwriting existing theme file.
+Try my custom Monokai theme if you like by copying and overwriting existing theme file.
 
 ```
 cp ~/.vim/misc/Monokai.vim ~/.vim/bundle/vim-colorschemes/colors/Monokai.vim
