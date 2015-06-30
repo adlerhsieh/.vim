@@ -22,3 +22,10 @@
 
 在輸入`if`、`do`等關鍵字後，按下`Enter`，會自動補上`end`關鍵字。
 
+## [Vim-Rails](https://github.com/tpope/vim-rails)、[Vim-Ruby](https://github.com/vim-ruby/vim-ruby)、[Vim-RSpec](https://github.com/thoughtbot/vim-rspec)、[Vim-rvm](https://github.com/tpope/vim-rvm)
+
+各種套件，主要用於syntax highlight和直接從vim內部下terminal指令，可參考各官方repo的使用方法。
+
+## [Vim-Go](https://github.com/fatih/vim-go)
+
+Go語言套件，但我目前還沒有非常深入使用Go，參考一下即可。
