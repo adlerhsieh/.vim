@@ -20,3 +20,7 @@
 1. [外掛(plugins)](https://github.com/nkj20932/.vim/blob/master/document/plugins.md)
 2. [各語言外掛(lang plugins)](https://github.com/nkj20932/.vim/blob/master/document/lang_plugins.md)
 3. [熱鍵(keymap)](https://github.com/nkj20932/.vim/blob/master/document/keymap.md)
+
+## 問題 & 建議
+
+若有發現任何錯誤、建議、問題，請開issue我會進行處理，謝謝！
