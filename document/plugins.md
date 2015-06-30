@@ -139,3 +139,41 @@ end
 
 如果我的游標在開頭`{`上，則按下`%`就會自動跳到整個hash的結尾處`}`。
 
+## 自動補字 [subertab](https://github.com/ervandew/supertab)
+
+Vim的預設自動補字是`ctrl` + `n`，但大多數人的習慣都是使用`tab`鍵，這個外掛將自動補字改到`tab`鍵上。當然他有其他更深入的設定，歡迎自行調整。
+
+## 分行對齊 [tabular](https://github.com/godlygeek/tabular)
+
+如果有多行code需要對齊，在打完code之後可以直接用此外掛的功能對齊。
+
+##### 熱鍵 & 使用
+
+預設是要用`:Tabularize /`才可使用，但名稱很長，已改為`<Leader>t`就可以輸入要對齊的符號。`.vimrc`內的設定如下：
+
+```viml
+nnoremap <Leader>t :Tabularize /
+vnoremap <Leader>t :Tabularize /
+```
+
+使用方式：
+
+```ruby
+{
+:foo => "bar", 
+:hello => "world",
+:tennis => "player"
+}
+```
+
+按下`<Leader>t`並輸入要對齊的符號`=>`，按下`Enter`就會變成：
+
+```ruby
+{
+:foo    => "bar", 
+:hello  => "world",
+:tennis => "player"
+}
+```
+
+算是自動對齊的好幫手！
