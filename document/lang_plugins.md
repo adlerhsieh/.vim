@@ -18,3 +18,7 @@
 
 主要協助coffee script的Syntax highlight和自動補字，假如你是Rails開發者，就不需要用到compile功能，也就是說不需要設定也可以正常使用。
 
+## Ruby自動結尾 [endwise](https://github.com/tpope/vim-endwise)
+
+在輸入`if`、`do`等關鍵字後，按下`Enter`，會自動補上`end`關鍵字。
+
