@@ -19,9 +19,9 @@
 
 ## 檔案儲存 & 離開
 
-Normal Mode按下`S`儲存檔案
-Normal Mode按下`WQ`儲存檔案並離開
-Normal Mode按下`Q`離開
+1. Normal Mode按下`S`儲存檔案
+2. Normal Mode按下`WQ`儲存檔案並離開
+3. Normal Mode按下`Q`離開
 
 ## `-`、`=`鍵
 
