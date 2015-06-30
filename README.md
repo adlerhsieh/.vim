@@ -23,7 +23,7 @@ rm ~/.vimrc
 #### 2. Clone the repo 複製專案
 
 ```
-git clone git@github.com:nkj20932/.vim.git ~/.vim
+git clone https://github.com/nkj20932/.vim.git ~/.vim
 ```
 
 #### 3. Clone plugins 安裝外掛
