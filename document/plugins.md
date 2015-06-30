@@ -221,6 +221,59 @@ map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 " 使用兩個字母搜尋， 如果你喜歡用一個字母搜尋，可將本行結尾改成(easymotion-s)
 nmap s <Plug>(easymotion-s2)
+let g:EasyMotion_startofline = 0
+let g:EasyMotion_smartcase = 1
 ```
 
 使用的話，先按`s`，再按下你要搜尋的兩個字母，接著會有搜尋結果跳出，再按下相對應的字母，就會將游標移動過去。
+
+## Git整合 [Vim Fugitive](https://github.com/tpope/vim-fugitive)
+
+雖然裝了，但我本人都是用[Source Tree](https://www.sourcetreeapp.com/)或[Tig](https://github.com/jonas/tig)，因此這個外掛並沒有直接使用到，有興趣的朋友可以研究一下，這是非常受歡迎的外掛，有非常多相關資料。
+
+## 搜尋後快速移動 [Sneak](https://github.com/justinmk/vim-sneak)
+
+在搜尋第一次後，可直接按下`;`跳到下一個相同的字母或字詞。例如：
+
+```ruby
+|post = Post.where(:user_id => 10)
+```
+
+例如我的游標在整行的開頭，這時在normal mode按下`fe`進行搜尋，會將游標跳至`where`的位置如下：
+
+```ruby
+post = Post.wh|ere(:user_id => 10)
+```
+
+這時按`;`，就會跳至下一個`e`的位置如下：
+
+```ruby
+post = Post.wher|e(:user_id => 10)
+```
+
+##### 熱鍵 & 設定
+
+```viml
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
+```
+
+這份設定檔算是在原本的`f`搜尋再加上sneak的功能。並沒有加到另一個搜尋`t`上。
+
+## Snippets [snipmate](https://github.com/garbas/vim-snipmate) & [snippets](https://github.com/honza/vim-snippets)
+
+大家對snippets的應用應該都很熟悉，假如你還不太熟，簡單來說就是你在Ruby檔案中輸入`def`再按`Enter`，就會自動補上method的內容，變成：
+
+```ruby
+def method
+
+end
+```
+
+基本上snipmate是外掛的功能，但並沒有任何snippet，需要安裝snippets才會有許多內建的snippets。
+
+如果需要自訂snippets，可以到[snippets](https://github.com/honza/vim-snippets/tree/master/snippets)資料夾中修改檔案，詳細的用法可以參考[YouTube上的介紹影片](https://www.youtube.com/watch?v=xV2IsE5OHd4)。
