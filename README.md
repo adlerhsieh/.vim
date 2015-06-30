@@ -52,4 +52,4 @@ cp ~/.vim/misc/Monokai.vim ~/.vim/bundle/vim-colorschemes/colors/Monokai.vim
 
 ## 其他
 
-Ruby、Rails及其他學習資源，歡迎至我的網站[特快車](http://motion-express.com)
+Vim、Ruby、Rails及其他學習資源，歡迎至我的網站[特快車](http://motion-express.com)
