@@ -156,7 +156,7 @@ nnoremap <Leader>t :Tabularize /
 vnoremap <Leader>t :Tabularize /
 ```
 
-使用方式：
+假如有一個ruby的hash如下：
 
 ```ruby
 {
@@ -177,3 +177,17 @@ vnoremap <Leader>t :Tabularize /
 ```
 
 算是自動對齊的好幫手！
+
+## 自動註解 [tcomment](https://github.com/tomtom/tcomment_vim)
+
+在Sublime Text中可以使用`ctrl` + `/`進行註解，在Vim內並沒有內建此功能，因此使用此外掛補強。
+
+##### 熱鍵
+
+有非常多用法，以下三種是我最常用的：
+
+1. 單行註解：`gcc`
+2. Visual Mode 多行註解：利用Visual mode選取多行以後，按`gc`即可多行註解
+3. Normal Mode 多行註解：`gc <count> <motion>`即可多行註解，例如`gc10j`就是向下註解10行。
+
+其他用法可以參照官方repo。
