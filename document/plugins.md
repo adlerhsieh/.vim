@@ -331,3 +331,6 @@ call textobj#user#plugin('datetime', {
 
 其他類型也可以自己定義，在[官方repo](https://github.com/kana/vim-textobj-user)中有許多範例可以參考。
 
+=====
+
+[回到首頁](https://github.com/nkj20932/.vim/blob/master/document/welcome.md)
