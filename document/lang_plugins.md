@@ -29,3 +29,7 @@
 ## [Vim-Go](https://github.com/fatih/vim-go)
 
 Go語言套件，可參考[hSATAC前輩的配置說明](http://blog.hsatac.net/2013/08/my-vimrc-for-golang/)。
+
+=====
+
+[回到首頁](https://github.com/nkj20932/.vim/blob/master/document/welcome.md)
