@@ -277,3 +277,57 @@ end
 基本上snipmate是外掛的功能，但並沒有任何snippet，需要安裝snippets才會有許多內建的snippets。
 
 如果需要自訂snippets，可以到[snippets](https://github.com/honza/vim-snippets/tree/master/snippets)資料夾中修改檔案，詳細的用法可以參考[YouTube上的介紹影片](https://www.youtube.com/watch?v=xV2IsE5OHd4)。
+
+## 自動修改外圍標點符號 [Surround](https://github.com/tpope/vim-surround)
+
+只要我們有一個字或一個句子，這個外掛可以幫忙直接在不移動游標的情況下，在旁邊加上標點符號，例如：
+
+```ruby
+johnny_walker
+```
+
+假如我們的游標在這個字上，只要按下`ysiw"`，就會變成：
+
+```ruby
+"johnny_walker"
+```
+
+基本上`y`是增加、`s`代表surround外掛，`i`是Vim內建的inner，`w`是word，照這個邏輯就可以增加旁邊的符號。
+
+另外3個我很常用的：
+
+1. `cs"'`將兩旁的`"`符號改為`'`符號
+2. 在HTML tag當中例如：`<p>hello</p>`按下`cst<span>`就會將這個tag變成`<span>hello</span>`
+3. `ds"`將兩旁的`"`刪除
+
+這邊不將公式列出來，大家應該可以舉一反三，至於更深入的用法和設定，可以[參考官方repo](https://github.com/tpope/vim-surround)。
+
+## 自定block類型 [Text Object User](https://github.com/kana/vim-textobj-user)
+
+可以自訂block的類型，這樣我們就可以利用`d`或`c`來直接刪除或修改整個block。
+
+例如我們可以自訂date的格式：
+
+```viml
+call textobj#user#plugin('datetime', {
+\   'date': {
+\     'pattern': '\<\d\d\d\d-\d\d-\d\d\>',
+\     'select': ['ad', 'id'],
+\   },
+\ })
+```
+
+這樣一來，假如我們在編輯時有一個date格式：
+
+```html
+<p>Today is 2015-10-20</p>
+```
+
+假如我們游標在`20`處，按下`did`，就會將日期整個刪除掉變成：
+
+```html
+<p>Today is </p>
+```
+
+其他類型也可以自己定義，在[官方repo](https://github.com/kana/vim-textobj-user)中有許多範例可以參考。
+
