@@ -66,6 +66,4 @@ Redo：`rr`
 
 其他設定比較屬於個人使用的熱鍵，並不一定符合你的使用習慣，這邊就不列舉，可以參照[.vimrc](https://github.com/nkj20932/.vim/blob/master/misc/.vimrc)的設定。
 
-=====
-
 [回到首頁](https://github.com/nkj20932/.vim/blob/master/document/welcome.md)
