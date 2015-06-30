@@ -18,6 +18,12 @@
 
 原本的`<Leader>`鍵改為`,`
 
+## 檔案儲存 & 離開
+
+Normal Mode按下`S`儲存檔案
+Normal Mode按下`WQ`儲存檔案並離開
+Normal Mode按下`Q`離開
+
 ## `-`、`=`鍵
 
 鍵盤右上方的`-`及`=`鍵，已重新規劃成往下捲動半頁及往上捲動半頁。
@@ -49,3 +55,17 @@ Normal Mode底下在行尾快速增加逗點(`<Leader>/`)或分號(`<Leader>;`)�
 nnoremap <Leader>/ A,<Esc>
 nnoremap <Leader>; A;<Esc>
 ```
+
+整個檔案重新進行縮排(indentaion)：`<Leader>i`
+
+Redo：`rr`
+
+在Insert Mode當中往右移動一格：`<Leader>l`
+
+=====
+
+其他設定比較屬於個人使用的熱鍵，並不一定符合你的使用習慣，這邊就不列舉，可以參照[.vimrc](https://github.com/nkj20932/.vim/blob/master/misc/.vimrc)的設定。
+
+=====
+
+[回到首頁](https://github.com/nkj20932/.vim/blob/master/document/welcome.md)
