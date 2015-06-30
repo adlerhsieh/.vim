@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/hsiehadler/projects/express/config'
-let g:netrw_dirhist_2='/Users/hsiehadler/projects/express'
-let g:netrw_dirhist_3='/Users/hsiehadler/projects/express/app'
-let g:netrw_dirhist_4='/Users/hsiehadler/prebuy'
-let g:netrw_dirhist_5='/Users/hsiehadler/prebuy/app'
-let g:netrw_dirhist_6='/Users/hsiehadler/prebuy/app/services'
