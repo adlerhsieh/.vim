@@ -28,4 +28,4 @@
 
 ## [Vim-Go](https://github.com/fatih/vim-go)
 
-Go語言套件，但我目前還沒有非常深入使用Go，參考一下即可。
+Go語言套件，可參考[hSATAC前輩的配置說明](http://blog.hsatac.net/2013/08/my-vimrc-for-golang/)。
