@@ -14,3 +14,7 @@
 
 另外他也協助highlight在Gemfile當中的關鍵字，其他設定可直接至官方repo查看。
 
+## [Coffee Script](https://github.com/kchmck/vim-coffee-script)
+
+主要協助coffee script的Syntax highlight和自動補字，假如你是Rails開發者，就不需要用到compile功能，也就是說不需要設定也可以正常使用。
+
