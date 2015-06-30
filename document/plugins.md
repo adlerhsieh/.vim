@@ -70,7 +70,7 @@ git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.s
 
 在輸入標點符號例如`[`或`(`時，會自動補上`]`或`)`，Sublime Text已內建的功能。
 
-## 檔案搜尋 [ctrl-p](https://github.com/kien/ctrlp.vim)
+## 檔案搜尋 [ctrlp](https://github.com/kien/ctrlp.vim)
 
 針對整個專案進行搜尋，搜尋是模糊搜尋，所以不用打上完整的字詞，也可以搜尋到檔案。
 
@@ -89,4 +89,53 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore "**/*.pyc"
       \ -g ""'
 ```
+
+## 加速檔案搜尋 [ctrlp-py-matcher](https://github.com/FelikZ/ctrlp-py-matcher)
+
+預設[ctrlp](https://github.com/kien/ctrlp.vim)的搜尋速度都非常慢，用另外的python外掛可以確保加快搜尋速度，至少可以到現代編輯器的水準。(原本的速度讓人想死，尤其用過Sublime Text的搜尋以後根本回不來。)
+
+* 使用前確認系統有安裝Python
+
+## HTML snippts 套件 [emmet-vim](https://github.com/mattn/emmet-vim)
+
+用過Emmet的人應該都知道這是幹嘛的，由於本人並不是那麼常寫html code，所以這個外掛裝了卻不常用到，詳細使用方式可以參照官方repo的說明，這部份我並沒有修改任何設定。
+
+## 佈景主題 [lightline.vim](https://github.com/itchyny/lightline.vim)
+
+打開Vim以後的佈景主題，基本上已經設定完成。可參照官方repo自行修改喜歡的樣式。
+
+##### 設定
+
+```viml
+let g:lightline = {
+                  \ 'colorscheme': 'wombat',
+                  \ }
+set laststatus=2
+```
+
+我選的主題是`wombat`，其他幾乎都使用預設。
+
+## 尋找block開頭/結尾 [ruby-matchit](https://github.com/vim-scripts/ruby-matchit)
+
+主要用於在一個block或method當中的開頭和結尾切換位置。
+
+##### 熱鍵
+
+按下`%`即會尋找該段的結尾。例如：
+
+```ruby
+def hello
+  "world"
+end
+```
+
+假設我的游標在`def`的前面，則按下`%`，會自動跳到`end`上。如果在`world`當中，也會自動跳到`end`。反之，如果游標在`end`，則會跳到`def`上。
+
+同樣的道理也可以運用在任何有開/關的標點符號上，例如：
+
+```ruby
+{:foo => "bar", :hello => "world"}
+```
+
+如果我的游標在開頭`{`上，則按下`%`就會自動跳到整個hash的結尾處`}`。
 
