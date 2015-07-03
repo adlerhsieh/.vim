@@ -2,7 +2,7 @@
 
 This is the vim plugins and .vimrc for reference and backup.
 
-## [Documents 設定檔內容說明](https://github.com/nkj20932/.vim/blob/master/document/welcome.md)
+## [Documents 設定檔內容說明](/document/welcome.md)
 
 ## Requirement 需求
 
@@ -23,7 +23,7 @@ rm ~/.vimrc
 #### 2. Clone the repo 複製專案
 
 ```
-git clone git@github.com:nkj20932/.vim.git ~/.vim
+git clone https://github.com/nkj20932/.vim.git ~/.vim
 ```
 
 #### 3. Clone plugins 安裝外掛
@@ -44,7 +44,7 @@ cp ~/.vim/misc/.vimrc ~/.vimrc
 
 #### 5. Copy custom theme (Optional) 使用我的佈景主題
 
-Try my custom Monokai them if you like by copying and overwriting existing theme file.
+Try my custom Monokai theme if you like by copying and overwriting existing theme file.
 
 ```
 cp ~/.vim/misc/Monokai.vim ~/.vim/bundle/vim-colorschemes/colors/Monokai.vim
@@ -52,4 +52,4 @@ cp ~/.vim/misc/Monokai.vim ~/.vim/bundle/vim-colorschemes/colors/Monokai.vim
 
 ## 其他
 
-Ruby、Rails及其他學習資源，歡迎至我的網站[特快車](http://motion-express.com)
+Vim、Ruby、Rails及其他學習資源，歡迎至我的網站[特快車](http://motion-express.com)

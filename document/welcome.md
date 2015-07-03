@@ -16,9 +16,9 @@
 
 ## 目錄
 
-1. [外掛(plugins)](https://github.com/nkj20932/.vim/blob/master/document/plugins.md)
-2. [各語言外掛(lang plugins)](https://github.com/nkj20932/.vim/blob/master/document/lang_plugins.md)
-3. [熱鍵(keymap)](https://github.com/nkj20932/.vim/blob/master/document/keymap.md)
+1. [外掛(plugins)](/document/plugins.md)
+2. [各語言外掛(lang plugins)](/document/lang_plugins.md)
+3. [熱鍵(keymap)](/document/keymap.md)
 
 ## 問題 & 建議
 
