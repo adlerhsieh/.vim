@@ -141,6 +141,9 @@ nnoremap <Enter> O<Esc>0D
 nnoremap <Space> i<Space><Esc>
 " remap redo
 nnoremap rr <c-r>
+" copy to system clipboard
+nnoremap <Leader>y :w !pbcopy<CR><CR>
+vnoremap <Leader>y :w !pbcopy<CR><CR>
 " css syntax
 autocmd Filetype css,scss inoremap <buffer> {<CR> {<CR>}<Esc>O
 autocmd Filetype css,scss nnoremap <buffer> <Leader>c 0f;cT: 
