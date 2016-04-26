@@ -2,7 +2,7 @@
 
 This is the vim plugins and .vimrc for reference and backup.
 
-## [Documents 設定檔內容說明](/document/welcome.md)
+#### [Documents 說明](/document/welcome.md)
 
 ## Requirement 需求
 
@@ -23,7 +23,7 @@ rm ~/.vimrc
 #### 2. Clone the repo 複製專案
 
 ```
-git clone https://github.com/nkj20932/.vim.git ~/.vim
+git clone https://github.com/adlerhsieh/.vim.git ~/.vim
 ```
 
 #### 3. Clone plugins 安裝外掛
@@ -42,13 +42,17 @@ git submodule update --recursive
 cp ~/.vim/misc/.vimrc ~/.vimrc
 ```
 
-#### 5. Copy custom theme (Optional) 使用我的佈景主題
+#### 5. (Optional) Copy Theme 使用我的佈景主題
 
-Try my custom Monokai theme if you like by copying and overwriting existing theme file.
+The theme is set to `monokai` as default. Use the `onedark` theme by running:
 
 ```
-cp ~/.vim/misc/Monokai.vim ~/.vim/bundle/vim-colorschemes/colors/Monokai.vim
+cp ~/.vim/misc/onedark.vim ~/.vim/bundle/vim-colorschemes/colors/onedark.vim
 ```
+
+And go to [this line in .vimrc](https://github.com/adlerhsieh/.vim/blob/master/misc/.vimrc#L168) and change `monokai` to `onedark`. Source the file and you should see the following:
+
+![](http://i.imgur.com/6KeggVu.png)
 
 ## 其他
 
