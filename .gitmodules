@@ -94,3 +94,36 @@
 [submodule "bundle/terminus"]
 	path = bundle/terminus
 	url = https://github.com/wincent/terminus.git
+[submodule "bundle/vim-rubocop"]
+	path = bundle/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop.git
+[submodule "bundle/dbext.vim"]
+	path = bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-multiedit"]
+	path = bundle/vim-multiedit
+	url = https://github.com/hlissner/vim-multiedit.git
+[submodule "bundle/vim-crystal"]
+	path = bundle/vim-crystal
+	url = https://github.com/rhysd/vim-crystal.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/gv.vim"]
+	path = bundle/gv.vim
+	url = https://github.com/junegunn/gv.vim.git
+[submodule "syntastic"]
+	path = syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "vim-cursorword"]
+	path = vim-cursorword
+	url = git@github.com:itchyny/vim-cursorword.git
+[submodule "bundle/vim-cursorword"]
+	path = bundle/vim-cursorword
+	url = git@github.com:itchyny/vim-cursorword.git

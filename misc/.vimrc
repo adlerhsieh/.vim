@@ -3,6 +3,7 @@ execute pathogen#infect()
 " remap command mode & leader key
 let mapleader = ","
 " file setting
+set shell=/bin/sh
 set nocompatible
 set noswapfile
 filetype on
@@ -24,7 +25,6 @@ function! Plugins_backup()
   :execute "read !ls ~/.vim/bundle"
   :execute "wq"
 endfunction
-
 " ========================
 "         Plugins 
 " ========================
@@ -44,6 +44,8 @@ map  N <Plug>(easymotion-prev)
 nmap s <Plug>(easymotion-s2)
 let g:EasyMotion_startofline = 0
 let g:EasyMotion_smartcase = 1
+" emmet
+" let g:user_emmet_leader_key='<c-a>'
 " vim-sneak
 nmap f <Plug>Sneak_f
 nmap F <Plug>Sneak_F
@@ -62,6 +64,10 @@ nnoremap <Leader>nv :vsplit .<CR>
 nnoremap <Leader>nV :Vexplore<CR>
 nnoremap <Leader>nt :tabnew<CR>:e.<CR>
 nnoremap <Leader>nT :tabnew<CR>:Explore<CR>
+let g:netrw_localrmdir='rm -r'
+" vim-go
+nnoremap <Leader>gt :GoTest<CR>
+nnoremap <Leader>ga :GoAlternate<CR>
 " CtrlP activation
 let g:ctrlp_map = '<Leader>.'
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
@@ -174,6 +180,7 @@ au BufRead,BufNewFile *.jbuilder setfiletype ruby
 au BufRead,BufNewFile Gemfile setfiletype ruby
 au BufRead,BufNewFile Rakefile setfiletype ruby
 au BufRead,BufNewFile *.ru setfiletype ruby
+au BufRead,BufNewFile *.cr setfiletype ruby
 au BufRead,BufNewFile *.json setfiletype javascript
 au BufNewFile * write
 " au BufWritePost * call 
