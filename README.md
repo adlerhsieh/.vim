@@ -1,13 +1,13 @@
 # My .vim Backup 我的Vim設定檔
 
-This is the vim plugins and .vimrc for reference and backup.
+This is the vim plugins and .vimrc for reference and backup. This .vim is compatible with Vim 7.3 and probably with newer versions. 
 
 #### [Documents 說明](/document/welcome.md)
 
 ## Requirement 需求
 
 1. Unix system with [Vim](http://www.vim.org/) editor installed.
-2. This .vim is compatible with Vim 7.3 and probably with newer versions. 
+2. [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) installed.
 
 ## Installation 安裝
 
