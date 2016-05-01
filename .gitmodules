@@ -115,15 +115,9 @@
 [submodule "bundle/gv.vim"]
 	path = bundle/gv.vim
 	url = https://github.com/junegunn/gv.vim.git
-[submodule "syntastic"]
-	path = syntastic
-	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
-[submodule "vim-cursorword"]
-	path = vim-cursorword
-	url = git@github.com:itchyny/vim-cursorword.git
+  path = bundle/syntastic
+  url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/vim-cursorword"]
-	path = bundle/vim-cursorword
-	url = git@github.com:itchyny/vim-cursorword.git
+  path = bundle/vim-cursorword
+  url = https://github.com/itchyny/vim-cursorword.git

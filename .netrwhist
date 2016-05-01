@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/hsiehadler/prebuy/app/views/templates'
-let g:netrw_dirhist_2='/Users/hsiehadler/prebuy/app/views/templates/clients'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/ubuntu/.vim/.git/refs'
+let g:netrw_dirhist_2='/home/ubuntu/.vim/.git/refs/remotes'
+let g:netrw_dirhist_3='/home/ubuntu/.vim/.git/refs/remotes/origin'
+let g:netrw_dirhist_4='/home/ubuntu/.vim/.git'
+let g:netrw_dirhist_5='/home/ubuntu/.vim'
