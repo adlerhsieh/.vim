@@ -42,17 +42,19 @@ git submodule update --recursive
 cp ~/.vim/misc/.vimrc ~/.vimrc
 ```
 
-#### 5. (Optional) Copy Theme 使用我的佈景主題
+#### 5. Theme 佈景主題
 
-The theme is set to `monokai` as default. Use the `onedark` theme by running:
+The theme is set to `onedark` as default. Copy the theme file before you enter vim, or you'll find an error message that the theme cannot be found.
 
 ```
 cp ~/.vim/misc/onedark.vim ~/.vim/bundle/vim-colorschemes/colors/onedark.vim
 ```
 
-And go to [this line in .vimrc](https://github.com/adlerhsieh/.vim/blob/master/misc/.vimrc#L168) and change `monokai` to `onedark`. Source the file and you should see the following:
+And you should see something like this:
 
 ![](http://i.imgur.com/6KeggVu.png)
+
+On the other hand, if you want to change it to another theme, go to [this part in .vimrc](https://github.com/adlerhsieh/.vim/blob/master/misc/.vimrc#L168) and change `onedark` to popular `monokai` or other themes. Source the file and it's done.
 
 ## 其他
 

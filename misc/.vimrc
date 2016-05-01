@@ -160,12 +160,14 @@ autocmd Filetype txt nnoremap <buffer> j gj
 autocmd Filetype txt nnoremap <buffer> k gk
 " autocmd Filetype netrw nnoremap <buffer> o <CR>
 autocmd Filetype netrw nnoremap <buffer> - <c-d>
+" backspace has no function as default in vim 7.4
+set backspace=indent,eol,start
 " ========================
 "           View
 " ========================
 
 " theme comes with Pathogen. Load this line after bundle is executed.
-colorscheme monokai 
+colorscheme onedark
 " font options
 set guifont=Anonymous\ Pro:h16
 set guioptions=r
