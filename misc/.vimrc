@@ -117,7 +117,7 @@ noremap <Down> <Nop>
 noremap = <c-u>
 noremap - <c-d>
 " switch window
-nnoremap gn <c-w><c-w>
+nnoremap g. <c-w><c-w>
 nnoremap <c-l> <c-w>5<
 nnoremap <c-h> <c-w>5>
 nnoremap <c-j> <c-w>5-
