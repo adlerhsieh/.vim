@@ -9,7 +9,29 @@ This is the vim plugins and .vimrc for reference and backup. This .vim is compat
 1. Unix system with [Vim](http://www.vim.org/) editor installed.
 2. [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) installed.
 
-## Installation 安裝
+#### Installation TL;DR
+
+Run every command and make sure they work well. You can copy and paste them in the command line.
+
+```
+rm -rf ~/.vim
+rm ~/.vimrc
+git clone https://github.com/adlerhsieh/.vim.git ~/.vim
+cd ~/.vim ; git submodule init
+cd ~/.vim ; git submodule update --recursive
+cp ~/.vim/misc/.vimrc ~/.vimrc
+cp ~/.vim/misc/onedark.vim ~/.vim/bundle/vim-colorschemes/colors/onedark.vim
+
+```
+
+And install the following according to your os.
+
+```
+brew install the_silver_searcher
+apt-get install silversearcher-ag
+```
+
+## Step by Step Installation 安裝
 
 #### 1. Remove existing files 移除既有檔案
 
