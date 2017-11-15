@@ -8,6 +8,7 @@ dbext.vim
 emmet-vim
 gv.vim
 lightline.vim
+matcher
 ruby-matchit
 supertab
 syntastic

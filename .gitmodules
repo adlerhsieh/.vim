@@ -121,3 +121,6 @@
 [submodule "bundle/vim-cursorword"]
   path = bundle/vim-cursorword
   url = https://github.com/itchyny/vim-cursorword.git
+[submodule "bundle/matcher"]
+	path = bundle/matcher
+	url = https://github.com/burke/matcher.git
