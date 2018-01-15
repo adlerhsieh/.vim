@@ -1,10 +1,10 @@
-# My .vim Backup 我的Vim設定檔
+# My Vim Config
 
 This is the vim plugins and .vimrc for reference and backup. This .vim is compatible with Vim 7.3 and probably with newer versions. 
 
-#### [Documents 說明](/document/welcome.md)
+#### [Documents](/document/welcome.md)
 
-## Requirement 需求
+## Requirement
 
 1. Unix system with [Vim](http://www.vim.org/) editor installed.
 2. [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) installed.
@@ -22,6 +22,9 @@ cd ~/.vim ; git submodule update --recursive
 cp ~/.vim/misc/.vimrc ~/.vimrc
 cp ~/.vim/misc/onedark.vim ~/.vim/bundle/vim-colorschemes/colors/onedark.vim
 
+cd ~/.vim/bundle
+git clone https://github.com/burke/matcher.git
+cd matcher && make && make install
 ```
 
 And install the following according to your os.
@@ -31,9 +34,9 @@ brew install the_silver_searcher
 apt-get install silversearcher-ag
 ```
 
-## Step by Step Installation 安裝
+## Step by Step Installation
 
-#### 1. Remove existing files 移除既有檔案
+#### 1. Remove existing files
 
 Remove your `.vim` and `.vimrc` first. Backup them up if you want to keep a copy.
 
@@ -42,13 +45,13 @@ rm -rf ~/.vim
 rm ~/.vimrc
 ```
 
-#### 2. Clone the repo 複製專案
+#### 2. Clone the repo
 
 ```
 git clone https://github.com/adlerhsieh/.vim.git ~/.vim
 ```
 
-#### 3. Clone plugins 安裝外掛
+#### 3. Clone plugins
 
 Init submodules and clone.
 
@@ -58,13 +61,13 @@ git submodule init
 git submodule update --recursive
 ```
 
-#### 4. Copy .vimrc 複製設定檔
+#### 4. Copy .vimrc 
 
 ```
 cp ~/.vim/misc/.vimrc ~/.vimrc
 ```
 
-#### 5. Theme 佈景主題
+#### 5. Theme
 
 The theme is set to `onedark` as default. Copy the theme file before you enter vim, or you'll find an error message that the theme cannot be found.
 
@@ -78,6 +81,6 @@ And you should see something like this:
 
 On the other hand, if you want to change it to another theme, go to [this part in .vimrc](https://github.com/adlerhsieh/.vim/blob/master/misc/.vimrc#L168) and change `onedark` to popular `monokai` or other themes. Source the file and it's done.
 
-## 其他
+## Others
 
-Vim、Ruby、Rails及其他學習資源，歡迎至我的網站[特快車](http://motion-express.com)
+Other Vim, Ruby, Rails, Go, and other learning materials on [Motion Express](http://motion-express.com)
