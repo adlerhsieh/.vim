@@ -212,7 +212,7 @@ set guioptions=r
 " basic syntax display
 syntax on
 set number
-set cursorline
+" set cursorline
 set showcmd
 au BufRead,BufNewFile *.axlsx setfiletype ruby
 au BufRead,BufNewFile *.prawn setfiletype ruby
