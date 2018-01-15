@@ -25,6 +25,17 @@ function! Plugins_backup()
   :execute "read !ls ~/.vim/bundle"
   :execute "wq"
 endfunction
+" In certain files, delete trailing whitespace automatically on save.
+autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.es6 :%s/\s\+$//e
+autocmd BufWritePre *.jsx :%s/\s\+$//e
+autocmd BufWritePre *.erb :%s/\s\+$//e
+autocmd BufWritePre *.cpp :%s/\s\+$//e
+autocmd BufWritePre *.sh :%s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.ts :%s/\s\+$//e
+autocmd BufWritePre *.c :%s/\s\+$//e
 " ========================
 "         Plugins 
 " ========================
@@ -94,6 +105,33 @@ let g:mta_filetypes = {
     \ 'php': 1,
     \ 'erb': 1,
     \}
+" matcher
+if executable('matcher')
+    let g:ctrlp_match_func = { 'match': 'GoodMatch' }
+
+    function! GoodMatch(items, str, limit, mmode, ispath, crfile, regex)
+
+      " Create a cache file if not yet exists
+      let cachefile = ctrlp#utils#cachedir().'/matcher.cache'
+      if !( filereadable(cachefile) && a:items == readfile(cachefile) )
+        call writefile(a:items, cachefile)
+      endif
+      if !filereadable(cachefile)
+        return []
+      endif
+
+      " a:mmode is currently ignored. In the future, we should probably do
+      " something about that. the matcher behaves like "full-line".
+      let cmd = 'matcher --limit '.a:limit.' --manifest '.cachefile.' '
+      if !( exists('g:ctrlp_dotfiles') && g:ctrlp_dotfiles )
+        let cmd = cmd.'--no-dotfiles '
+      endif
+      let cmd = cmd.a:str
+
+      return split(system(cmd), "\n")
+
+    endfunction
+end
 " ========================
 "       Key Remapping
 " ========================
@@ -213,3 +251,4 @@ call textobj#user#plugin('datetime', {
 \     'select': ['at', 'it'],
 \   },
 \ })
+
