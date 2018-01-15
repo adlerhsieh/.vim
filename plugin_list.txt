@@ -20,6 +20,7 @@ vim-bundler
 vim-coffee-script
 vim-colorschemes
 vim-crystal
+vim-cursorword
 vim-easymotion
 vim-endwise
 vim-fugitive
