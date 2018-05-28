@@ -94,6 +94,8 @@ let g:mta_filetypes = {
     \ 'php': 1,
     \ 'erb': 1,
     \}
+" golang auto import
+let g:go_fmt_command = "goimports"
 " ========================
 "       Key Remapping
 " ========================
@@ -160,6 +162,8 @@ autocmd Filetype txt nnoremap <buffer> j gj
 autocmd Filetype txt nnoremap <buffer> k gk
 " autocmd Filetype netrw nnoremap <buffer> o <CR>
 autocmd Filetype netrw nnoremap <buffer> - <c-d>
+" compile and run c program
+autocmd Filetype c nnoremap <buffer> <Leader>c :!gcc % && ./a.out<CR>
 " backspace has no function as default in vim 7.4
 set backspace=indent,eol,start
 " ========================
@@ -184,6 +188,7 @@ au BufRead,BufNewFile Rakefile setfiletype ruby
 au BufRead,BufNewFile *.ru setfiletype ruby
 au BufRead,BufNewFile *.cr setfiletype ruby
 au BufRead,BufNewFile *.json setfiletype javascript
+au BufRead,BufNewFile *.es6 setfiletype javascript
 au BufNewFile * write
 " au BufWritePost * call 
 " indentation

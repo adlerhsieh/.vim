@@ -1,6 +1,7 @@
 
 MatchTagAlways
 ag.vim
+apiblueprint.vim
 auto-pairs
 ctrlp-py-matcher
 ctrlp.vim
@@ -19,10 +20,13 @@ vim-bundler
 vim-coffee-script
 vim-colorschemes
 vim-crystal
+vim-cursorword
 vim-easymotion
+vim-elixir
 vim-endwise
 vim-fugitive
 vim-go
+vim-jsx
 vim-markdown
 vim-multiedit
 vim-multiple-cursors
