@@ -132,6 +132,8 @@ if executable('matcher')
 
     endfunction
 end
+" golang auto-import
+let g:go_fmt_command = "goimports"
 " ========================
 "       Key Remapping
 " ========================
@@ -197,7 +199,7 @@ autocmd Filetype javascript inoremap <buffer> {<CR> {<CR>};<Esc>O
 autocmd Filetype txt nnoremap <buffer> j gj
 autocmd Filetype txt nnoremap <buffer> k gk
 " autocmd Filetype netrw nnoremap <buffer> o <CR>
-autocmd Filetype netrw nnoremap <buffer> - <c-d>
+" autocmd Filetype netrw nnoremap <buffer> - <c-d>
 " backspace has no function as default in vim 7.4
 set backspace=indent,eol,start
 " ========================
